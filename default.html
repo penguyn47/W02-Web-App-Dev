@@ -1,83 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="default.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="default.css" />
 
     <title>Group</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <a href="#" class="logo">Tripple A</a>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#info-table">Info</a>
-            
-            <div class="dropdown">
-                <a href="#" id="dropdown-title">Member &#9660;</a>
-                <div class="dropdown-content">
-                    <a href="./members/22120181/22120181.html">Nguyễn Duy Lâm</a>
-                    <a href="./members/22120183/22120183.html">Nguyễn Đặng Minh Lân</a>
-                    <a href="./members/22120186/22120186.html">Huỳnh Tấn Lộc</a>
-                </div>
-            </div>
-        </nav>
+      <a href="#" class="logo">Tripple A</a>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#info-table">Info</a>
+
+        <div class="dropdown">
+          <a href="#" id="dropdown-title">Member &#9660;</a>
+          <div class="dropdown-content">
+            <a href="./members/22120181/22120181.html">Nguyễn Duy Lâm</a>
+            <a href="./members/22120183/22120183.html">Nguyễn Đặng Minh Lân</a>
+            <a href="./members/22120186/22120186.html">Huỳnh Tấn Lộc</a>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <img src="./images/groupImage.jpg" alt="picture" class="groupImage" usemap="#image-map">
+    <img
+      src="./images/groupImage.jpg"
+      alt="picture"
+      class="groupImage"
+      usemap="#image-map"
+    />
 
     <map name="image-map">
-        <area shape="rect" coords="86,190,380,580" href="./members/22120181/22120181.html" alt="">
-        <area shape="rect" coords="611,237,932,650" href="./members/22120183/22120183.html" alt="">
-        <area shape="rect" coords="1091,154,1365,530" href="./members/22120186/22120186.html" alt="">
+      <area
+        shape="rect"
+        coords="86,190,380,580"
+        href="./members/22120181/22120181.html"
+        alt=""
+      />
+      <area
+        shape="rect"
+        coords="611,237,932,650"
+        href="./members/22120183/22120183.html"
+        alt=""
+      />
+      <area
+        shape="rect"
+        coords="1091,154,1365,530"
+        href="./members/22120186/22120186.html"
+        alt=""
+      />
     </map>
-    
+
     <div id="info-table" class="info-container">
-        <div class="info-title">Group: Tripple A</div>
-        <div>
-            <table class="info-table">
-                <thead>
-                    <th>Name</th>
-                    <th>Id</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Nguyễn Duy Lâm</td>
-                        <td>22120181</td>
-                    </tr>
-                    <tr>
-                        <td>Nguyễn Đặng Minh Lân</td>
-                        <td>22120183</td>
-                    </tr>
-                    <tr>
-                        <td>Huỳnh Tấn Lộc</td>
-                        <td>22120186</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+      <div class="info-title">Group: Tripple A</div>
+      <div>
+        <table class="info-table">
+          <thead>
+            <th>Name</th>
+            <th>Id</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Nguyễn Duy Lâm</td>
+              <td>22120181</td>
+            </tr>
+            <tr>
+              <td>Nguyễn Đặng Minh Lân</td>
+              <td>22120183</td>
+            </tr>
+            <tr>
+              <td>Huỳnh Tấn Lộc</td>
+              <td>22120186</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <script>
-        window.addEventListener('scroll', function() {
-            let scrollHeight = document.documentElement.scrollHeight;
-            
-            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      window.addEventListener("scroll", function () {
+        let scrollHeight = document.documentElement.scrollHeight;
 
-            let windowHeight = window.innerHeight;
+        let scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
 
-            let scrollPercentage = scrollTop / (scrollHeight - windowHeight);
+        let windowHeight = window.innerHeight;
 
-            let links = document.querySelectorAll('header nav a');
-            
-            let colorValue = Math.floor(scrollPercentage * 255);
+        let scrollPercentage = scrollTop / (scrollHeight - windowHeight);
 
-            links.forEach(function(link) {
-                
-                link.style.color = `rgb(${colorValue}, ${colorValue}, ${colorValue})`;
-            });
+        let links = document.querySelectorAll("header nav a");
+
+        let colorValue = Math.floor(scrollPercentage * 255);
+
+        links.forEach(function (link) {
+          link.style.color = `rgb(${colorValue}, ${colorValue}, ${colorValue})`;
         });
+      });
     </script>
-</body>
+  </body>
 </html>

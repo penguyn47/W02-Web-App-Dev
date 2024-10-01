@@ -1,70 +1,69 @@
-
 * {
-    border: 1px solid transparent;
+  border: 1px solid transparent;
 }
 
 nav a {
-    color: rgb(38, 38, 38);
+  color: rgb(38, 38, 38);
 }
 
 body {
-    background-color: #FFD801;
-    color: black;
+  background-color: #ffd801;
+  color: black;
 }
 
-.home{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8rem;
-    margin-top: 150px;
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  margin-top: 150px;
 }
 
-.home .home-content h1{
-    font-size: 6rem;
-    font-weight: 700;
-    line-height: 1.3;
+.home .home-content h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1.3;
 }
 
 .home-img img {
-    position: relative;
-    width: 25vw;
-    border-radius: 50%;
-    transition: 0.5s ease;
+  position: relative;
+  width: 25vw;
+  border-radius: 50%;
+  transition: 0.5s ease;
 }
 
-.home-img img:hover{
-    width: 35vw;
-    border-radius: 10%;
+.home-img img:hover {
+  width: 35vw;
+  border-radius: 10%;
 }
 
-span{
-    color: #b74b4b;
+span {
+  color: #b74b4b;
 }
 
 div {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
-.social-icons a{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 4rem;
-    height: 4rem;
-    background-color: transparent;
-    border: 0.2rem solid black;
-    font-size: 2rem;
-    border-radius: 50%;
-    margin: 3rem 1.5rem 3rem 0;
-    transition: 0.3s ease;
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: transparent;
+  border: 0.2rem solid black;
+  font-size: 2rem;
+  border-radius: 50%;
+  margin: 3rem 1.5rem 3rem 0;
+  transition: 0.3s ease;
 }
 
-.social-icons a:hover{
-    transform: scale(1.3);
-    background-color: wheat;
+.social-icons a:hover {
+  transform: scale(1.3);
+  background-color: wheat;
 }
 
 .social-icons i {
-    color: black;
+  color: black;
 }
